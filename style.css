@@ -1,0 +1,47 @@
+/*CREATED BY MOHAMED AYMAN*/
+/*WEB.END*/
+*{
+    box-sizing: bordebackr-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    min-height: 100vh;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input:before{
+    content: '\f005';
+    position: absolute;
+    font-family:fontAwesome;
+    color: #555555;
+    font-size: 2.5em;
+    transition: 0.5s;
+}
+
+input:hover ~ input::before,input:hover::before,input:checked ~ input::before,input:checked::before{
+    color:#ff0;
+}
+/*THANK YOU*/
